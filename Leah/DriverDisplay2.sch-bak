@@ -17,34 +17,34 @@ $EndDescr
 $Comp
 L Lafayette_Electric_Car_Internals:V7805-500 U2
 U 1 1 5DD5D737
-P 3350 1600
-F 0 "U2" H 3600 1767 50  0000 C CNN
-F 1 "V7805-500" H 3600 1676 50  0000 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:VX7805-500" H 2850 1700 50  0001 C CNN
-F 3 "https://www.cui.com/product/resource/v78-500.pdf" H 2850 1700 50  0001 C CNN
-	1    3350 1600
+P 3250 1000
+F 0 "U2" H 3500 1167 50  0000 C CNN
+F 1 "V7805-500" H 3500 1076 50  0000 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:VX7805-500" H 2750 1100 50  0001 C CNN
+F 3 "https://www.cui.com/product/resource/v78-500.pdf" H 2750 1100 50  0001 C CNN
+	1    3250 1000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C3
 U 1 1 5DD5DF3D
-P 4100 1950
-F 0 "C3" H 4215 1996 50  0000 L CNN
-F 1 "22u" H 4215 1905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4138 1800 50  0001 C CNN
-F 3 "~" H 4100 1950 50  0001 C CNN
-	1    4100 1950
+P 4000 1350
+F 0 "C3" H 4115 1396 50  0000 L CNN
+F 1 "22u" H 4115 1305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4038 1200 50  0001 C CNN
+F 3 "~" H 4000 1350 50  0001 C CNN
+	1    4000 1350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C2
 U 1 1 5DD5E24C
-P 3050 1950
-F 0 "C2" H 3165 1996 50  0000 L CNN
-F 1 "10u" H 3165 1905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3088 1800 50  0001 C CNN
-F 3 "~" H 3050 1950 50  0001 C CNN
-	1    3050 1950
+P 2950 1350
+F 0 "C2" H 3065 1396 50  0000 L CNN
+F 1 "10u" H 3065 1305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2988 1200 50  0001 C CNN
+F 3 "~" H 2950 1350 50  0001 C CNN
+	1    2950 1350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -74,40 +74,40 @@ Wire Wire Line
 	1350 2800 1450 2800
 Wire Wire Line
 	1450 2900 1350 2900
-Text Label 2950 2200 2    50   ~ 0
+Text Label 2850 1600 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
-	2950 2200 3050 2200
+	2850 1600 2950 1600
 Wire Wire Line
-	4100 2200 4100 2100
+	4000 1600 4000 1500
 Wire Wire Line
-	3600 2100 3600 2200
-Connection ~ 3600 2200
+	3500 1500 3500 1600
+Connection ~ 3500 1600
 Wire Wire Line
-	3600 2200 4100 2200
+	3500 1600 4000 1600
 Wire Wire Line
-	3050 2100 3050 2200
-Connection ~ 3050 2200
+	2950 1500 2950 1600
+Connection ~ 2950 1600
 Wire Wire Line
-	3050 2200 3600 2200
+	2950 1600 3500 1600
 Wire Wire Line
-	3050 1800 3050 1700
+	2950 1200 2950 1100
 Wire Wire Line
-	3050 1700 3250 1700
+	2950 1100 3150 1100
 Wire Wire Line
-	3950 1700 4100 1700
+	3850 1100 4000 1100
 Wire Wire Line
-	4100 1700 4100 1800
-Text Label 2950 1700 2    50   ~ 0
+	4000 1100 4000 1200
+Text Label 2850 1100 2    50   ~ 0
 GLV_24V
 Wire Wire Line
-	2950 1700 3050 1700
-Connection ~ 3050 1700
-Text Label 4200 1700 0    50   ~ 0
+	2850 1100 2950 1100
+Connection ~ 2950 1100
+Text Label 4100 1100 0    50   ~ 0
 GLV_5V
 Wire Wire Line
-	4200 1700 4100 1700
-Connection ~ 4100 1700
+	4100 1100 4000 1100
+Connection ~ 4000 1100
 $Comp
 L Connector_Generic:Conn_01x08 J2
 U 1 1 5DD793FC
@@ -343,13 +343,13 @@ Wire Wire Line
 Text Label 6450 4150 0    50   ~ 0
 ~G1
 Wire Wire Line
-	6375 3950 6450 3950
-Text Label 6450 3950 0    50   ~ 0
-~R2
-Wire Wire Line
-	6375 3850 6450 3850
-Text Label 6450 3850 0    50   ~ 0
+	4925 4150 4850 4150
+Text Label 4850 4150 2    50   ~ 0
 ~G2
+Wire Wire Line
+	4925 4050 4850 4050
+Text Label 4850 4050 2    50   ~ 0
+~R2
 $Comp
 L Lafayette_Electric_Car_Internals:PushButton BTN2
 U 1 1 5E48FC6E
@@ -434,9 +434,9 @@ Wire Wire Line
 	3550 5800 3750 5800
 Connection ~ 3550 5800
 Text Label 3750 5500 0    50   ~ 0
-CANH
+CAN_H
 Text Label 3750 5800 0    50   ~ 0
-CANL
+CAN_L
 $Comp
 L Device:C C5
 U 1 1 5E493D4C
@@ -568,4 +568,125 @@ F 3 "~" H 2050 5850 50  0001 C CNN
 $EndComp
 Text Label 1800 5850 2    50   ~ 0
 GLV_RTN
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5E5587CE
+P 2800 3200
+F 0 "H1" H 2900 3246 50  0000 L CNN
+F 1 "MountingHole" H 2900 3155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2800 3200 50  0001 C CNN
+F 3 "~" H 2800 3200 50  0001 C CNN
+	1    2800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5E55ADD8
+P 2800 3450
+F 0 "H2" H 2900 3496 50  0000 L CNN
+F 1 "MountingHole" H 2900 3405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2800 3450 50  0001 C CNN
+F 3 "~" H 2800 3450 50  0001 C CNN
+	1    2800 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5E55D975
+P 2800 3700
+F 0 "H3" H 2900 3746 50  0000 L CNN
+F 1 "MountingHole" H 2900 3655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2800 3700 50  0001 C CNN
+F 3 "~" H 2800 3700 50  0001 C CNN
+	1    2800 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5E560686
+P 2800 3950
+F 0 "H4" H 2900 3996 50  0000 L CNN
+F 1 "MountingHole" H 2900 3905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2800 3950 50  0001 C CNN
+F 3 "~" H 2800 3950 50  0001 C CNN
+	1    2800 3950
+	1    0    0    -1  
+$EndComp
+Text Notes 3450 6050 0    50   ~ 0
+Do not populate 120ohm resistor. Footprint is left open for debugging.
+$Comp
+L Lafayette_Electric_Car_Internals:V7809-500 U?
+U 1 1 5E5E366E
+P 3500 1900
+F 0 "U?" H 3500 1817 50  0000 C CNN
+F 1 "V7809-500" H 3500 1726 50  0000 C CNN
+F 2 "" H 3500 1900 50  0001 C CNN
+F 3 "" H 3500 1900 50  0001 C CNN
+	1    3500 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E5E4130
+P 2950 2500
+F 0 "C?" H 3065 2546 50  0000 L CNN
+F 1 "10u" H 3065 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2988 2350 50  0001 C CNN
+F 3 "~" H 2950 2500 50  0001 C CNN
+	1    2950 2500
+	1    0    0    -1  
+$EndComp
+Text Label 2850 2750 2    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	2850 2750 2950 2750
+Wire Wire Line
+	2950 2650 2950 2750
+Connection ~ 2950 2750
+Wire Wire Line
+	2950 2350 2950 2250
+Wire Wire Line
+	2950 2250 3150 2250
+Text Label 2850 2250 2    50   ~ 0
+GLV_24V
+Wire Wire Line
+	2850 2250 2950 2250
+Connection ~ 2950 2250
+$Comp
+L Device:C C?
+U 1 1 5E5E78E5
+P 4000 2500
+F 0 "C?" H 4115 2546 50  0000 L CNN
+F 1 "10u" H 4115 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4038 2350 50  0001 C CNN
+F 3 "~" H 4000 2500 50  0001 C CNN
+	1    4000 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2750 4000 2650
+Wire Wire Line
+	3850 2250 4000 2250
+Wire Wire Line
+	4000 2250 4000 2350
+Text Label 4100 2250 0    50   ~ 0
+GLV_9V
+Wire Wire Line
+	4100 2250 4000 2250
+Connection ~ 4000 2250
+Wire Wire Line
+	2950 2750 3500 2750
+Wire Wire Line
+	3500 2650 3500 2750
+Connection ~ 3500 2750
+Wire Wire Line
+	3500 2750 4000 2750
+Wire Wire Line
+	4925 4650 4850 4650
+Text Label 4850 4650 2    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	4925 4750 4850 4750
+Text Label 4850 4750 2    50   ~ 0
+GLV_9V
 $EndSCHEMATC
