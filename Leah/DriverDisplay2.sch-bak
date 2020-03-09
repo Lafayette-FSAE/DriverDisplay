@@ -189,12 +189,12 @@ ESP_GND
 $Comp
 L ESP32_Shield-cache:ESP32_Devkit_DOIT_V1 ESP321
 U 1 1 5E39D9F9
-P 5650 4000
-F 0 "ESP321" H 5650 4962 50  0000 C CNN
-F 1 "ESP32_Devkit_DOIT_V1" H 5650 4856 50  0000 C CNN
-F 2 "ESP32_Shield:ESP32_Devkit_DOIT_V1" H 5650 4000 50  0001 C CNN
-F 3 "" H 5650 4000 50  0001 C CNN
-	1    5650 4000
+P 5950 4200
+F 0 "ESP321" H 5950 5162 50  0000 C CNN
+F 1 "ESP32_Devkit_DOIT_V1" H 5950 5056 50  0000 C CNN
+F 2 "ESP32_Shield:ESP32_Devkit_DOIT_V1" H 5950 4200 50  0001 C CNN
+F 3 "" H 5950 4200 50  0001 C CNN
+	1    5950 4200
 	1    0    0    -1  
 $EndComp
 Text Label 5750 1700 2    50   ~ 0
@@ -217,60 +217,60 @@ Wire Wire Line
 Text Label 5750 2450 2    50   ~ 0
 ESP_GND
 Wire Wire Line
-	4925 3750 4850 3750
-Text Label 4850 3750 2    50   ~ 0
+	5225 3950 5150 3950
+Text Label 5150 3950 2    50   ~ 0
 ESP_BUTTON2
 Wire Wire Line
-	4925 3650 4850 3650
-Text Label 4850 3650 2    50   ~ 0
+	5225 3850 5150 3850
+Text Label 5150 3850 2    50   ~ 0
 ESP_BUTTON1
 Wire Wire Line
-	4925 4350 4850 4350
-Text Label 4850 4350 2    50   ~ 0
+	5225 4550 5150 4550
+Text Label 5150 4550 2    50   ~ 0
 CLK
 Wire Wire Line
-	4925 4550 4850 4550
-Text Label 4850 4550 2    50   ~ 0
+	5225 4750 5150 4750
+Text Label 5150 4750 2    50   ~ 0
 DIN
 Wire Wire Line
-	6375 3450 6450 3450
-Text Label 6450 3450 0    50   ~ 0
+	6675 3650 6750 3650
+Text Label 6750 3650 0    50   ~ 0
 DC
 Wire Wire Line
-	6375 3750 6450 3750
-Text Label 6450 3750 0    50   ~ 0
+	6675 3950 6750 3950
+Text Label 6750 3950 0    50   ~ 0
 RST
 Wire Wire Line
-	6375 4250 6450 4250
-Text Label 6450 4250 0    50   ~ 0
+	6675 4450 6750 4450
+Text Label 6750 4450 0    50   ~ 0
 BUSY
 Wire Wire Line
-	6375 4550 6450 4550
-Text Label 6450 4550 0    50   ~ 0
+	6675 4750 6750 4750
+Text Label 6750 4750 0    50   ~ 0
 CS
 Wire Wire Line
-	6375 4650 6450 4650
-Text Label 6450 4650 0    50   ~ 0
+	6675 4850 6750 4850
+Text Label 6750 4850 0    50   ~ 0
 ESP_GND
 Wire Wire Line
-	6375 4750 6450 4750
-Text Label 6450 4750 0    50   ~ 0
+	6675 4950 6750 4950
+Text Label 6750 4950 0    50   ~ 0
 ESP_3V3
 Wire Wire Line
-	6375 4450 6450 4450
-Text Label 6450 4450 0    50   ~ 0
+	6675 4650 6750 4650
+Text Label 6750 4650 0    50   ~ 0
 ~R1
 Wire Wire Line
-	6375 4150 6450 4150
-Text Label 6450 4150 0    50   ~ 0
+	6675 4350 6750 4350
+Text Label 6750 4350 0    50   ~ 0
 ~G1
 Wire Wire Line
-	4925 4150 4850 4150
-Text Label 4850 4150 2    50   ~ 0
+	5225 4350 5150 4350
+Text Label 5150 4350 2    50   ~ 0
 ~G2
 Wire Wire Line
-	4925 4050 4850 4050
-Text Label 4850 4050 2    50   ~ 0
+	5225 4250 5150 4250
+Text Label 5150 4250 2    50   ~ 0
 ~R2
 $Comp
 L Lafayette_Electric_Car_Internals:PushButton BTN2
@@ -319,12 +319,12 @@ Wire Wire Line
 Text Label 8950 4200 0    50   ~ 0
 BUTTON2
 Wire Wire Line
-	6375 4350 6450 4350
-Text Label 6450 4350 0    50   ~ 0
+	6675 4550 6750 4550
+Text Label 6750 4550 0    50   ~ 0
 CANTX
 Wire Wire Line
-	6375 4050 6450 4050
-Text Label 6450 4050 0    50   ~ 0
+	6675 4250 6750 4250
+Text Label 6750 4250 0    50   ~ 0
 CANRX
 $Comp
 L Device:R R3
@@ -493,12 +493,12 @@ GLV_RTN
 Text Notes 3450 6050 0    50   ~ 0
 Do not populate 120ohm resistor. Footprint is left open for debugging.
 Wire Wire Line
-	4925 4650 4850 4650
-Text Label 4850 4650 2    50   ~ 0
+	5225 4850 5150 4850
+Text Label 5150 4850 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
-	4925 4750 4850 4750
-Text Label 4850 4750 2    50   ~ 0
+	5225 4950 5150 4950
+Text Label 5150 4950 2    50   ~ 0
 GLV_9V
 $Comp
 L Connector_Generic:Conn_01x06 J1
@@ -707,14 +707,95 @@ F 3 "" H 2700 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H1
-U 1 1 5E74DDE5
-P 1750 4300
-F 0 "H1" H 1850 4346 50  0000 L CNN
-F 1 "MountingHole" H 1850 4255 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4mm_Pad" H 1750 4300 50  0001 C CNN
-F 3 "~" H 1750 4300 50  0001 C CNN
-	1    1750 4300
+L Mechanical:MountingHole_Pad H3
+U 1 1 5E78C86E
+P 2550 4300
+F 0 "H3" H 2650 4349 50  0001 L CNN
+F 1 "MountingHole_Pad" H 2650 4303 50  0000 L CNN
+F 2 "MountingHole:MountingHole_5mm" H 2550 4300 50  0001 C CNN
+F 3 "~" H 2550 4300 50  0001 C CNN
+	1    2550 4300
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5E78CFC2
+P 2550 4600
+F 0 "H4" H 2650 4649 50  0001 L CNN
+F 1 "MountingHole_Pad" H 2650 4603 50  0000 L CNN
+F 2 "MountingHole:MountingHole_5mm" H 2550 4600 50  0001 C CNN
+F 3 "~" H 2550 4600 50  0001 C CNN
+	1    2550 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5E792FE8
+P 1650 4300
+F 0 "H1" H 1750 4349 50  0001 L CNN
+F 1 "MountingHole_Pad" H 1750 4303 50  0000 L CNN
+F 2 "MountingHole:MountingHole_5mm" H 1650 4300 50  0001 C CNN
+F 3 "~" H 1650 4300 50  0001 C CNN
+	1    1650 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5E798F46
+P 1650 4600
+F 0 "H2" H 1750 4649 50  0001 L CNN
+F 1 "MountingHole_Pad" H 1750 4603 50  0000 L CNN
+F 2 "MountingHole:MountingHole_5mm" H 1650 4600 50  0001 C CNN
+F 3 "~" H 1650 4600 50  0001 C CNN
+	1    1650 4600
+	1    0    0    -1  
+$EndComp
+Text Label 1550 4400 2    50   ~ 0
+CH_GND
+Wire Wire Line
+	1650 4400 1550 4400
+Wire Wire Line
+	1650 4400 2550 4400
+Connection ~ 1650 4400
+Wire Wire Line
+	1650 4400 1650 4700
+Wire Wire Line
+	1650 4700 2550 4700
+Connection ~ 1650 4700
+Wire Wire Line
+	5225 3550 5150 3550
+Wire Wire Line
+	5225 3650 5150 3650
+Wire Wire Line
+	5225 3750 5150 3750
+Wire Wire Line
+	5225 4050 5150 4050
+Wire Wire Line
+	5225 4150 5150 4150
+Wire Wire Line
+	5225 4450 5150 4450
+Wire Wire Line
+	5225 4650 5150 4650
+Wire Wire Line
+	6675 3550 6750 3550
+Wire Wire Line
+	6675 3750 6750 3750
+Wire Wire Line
+	6675 3850 6750 3850
+Wire Wire Line
+	6675 4050 6750 4050
+Wire Wire Line
+	6675 4150 6750 4150
+NoConn ~ 6750 3550
+NoConn ~ 6750 3750
+NoConn ~ 6750 3850
+NoConn ~ 6750 4050
+NoConn ~ 6750 4150
+NoConn ~ 5150 3550
+NoConn ~ 5150 3650
+NoConn ~ 5150 3750
+NoConn ~ 5150 4050
+NoConn ~ 5150 4150
+NoConn ~ 5150 4450
+NoConn ~ 5150 4650
 $EndSCHEMATC

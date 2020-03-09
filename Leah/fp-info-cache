@@ -1,4 +1,4 @@
-16414835581330904
+16422759774060446
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -49719,7 +49719,7 @@ Lafayette_Electric_Car_Footprints
 
 0
 4
-0
+1
 Lafayette_Electric_Car_Footprints
 0154.500DRL
 
@@ -49757,6 +49757,13 @@ BluePill
 40
 Lafayette_Electric_Car_Footprints
 CELL60AH
+
+
+0
+2
+2
+Lafayette_Electric_Car_Footprints
+CELL60AH-no-slots
 
 
 0
@@ -49834,6 +49841,13 @@ ESP32TTGOT8
 30
 Lafayette_Electric_Car_Footprints
 G5Q-1A4
+
+
+0
+4
+4
+Lafayette_Electric_Car_Footprints
+MEF1S2405SP3C
 
 
 0
@@ -49959,11 +49973,32 @@ Powerpole_PP45_FP_1x2
 2
 2
 Lafayette_Electric_Car_Footprints
+Powerpole_PP45_FP_1x2_NoSlot
+
+
+0
+2
+2
+Lafayette_Electric_Car_Footprints
 PushButton
 
 
 0
 4
+2
+Lafayette_Electric_Car_Footprints
+RaspberryPi3
+
+
+0
+44
+44
+Lafayette_Electric_Car_Footprints
+ScrewTerminal_0.2in
+
+
+0
+2
 2
 Lafayette_Electric_Car_Footprints
 SlottedHole
