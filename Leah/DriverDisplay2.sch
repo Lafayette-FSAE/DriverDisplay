@@ -324,8 +324,6 @@ Text Label 6750 4550 0    50   ~ 0
 CANTX
 Wire Wire Line
 	6675 4250 6750 4250
-Text Label 6750 4250 0    50   ~ 0
-CANRX
 $Comp
 L Device:R R3
 U 1 1 5E470347
@@ -782,15 +780,9 @@ Wire Wire Line
 	6675 3750 6750 3750
 Wire Wire Line
 	6675 3850 6750 3850
-Wire Wire Line
-	6675 4050 6750 4050
-Wire Wire Line
-	6675 4150 6750 4150
 NoConn ~ 6750 3550
 NoConn ~ 6750 3750
 NoConn ~ 6750 3850
-NoConn ~ 6750 4050
-NoConn ~ 6750 4150
 NoConn ~ 5150 3550
 NoConn ~ 5150 3650
 NoConn ~ 5150 3750
@@ -798,4 +790,122 @@ NoConn ~ 5150 4050
 NoConn ~ 5150 4150
 NoConn ~ 5150 4450
 NoConn ~ 5150 4650
+Text Label 6750 4150 0    50   ~ 0
+AMS_FLT
+NoConn ~ 6750 4050
+Wire Wire Line
+	6675 4150 6750 4150
+Wire Wire Line
+	6675 4050 6750 4050
+Text Label 6750 4250 0    50   ~ 0
+CANRX
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5E6E9855
+P 5150 7000
+F 0 "J3" H 5230 6992 50  0000 L CNN
+F 1 "Conn_01x02" H 5230 6901 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" H 5150 7000 50  0001 C CNN
+F 3 "~" H 5150 7000 50  0001 C CNN
+	1    5150 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 7000 4800 7000
+Text Label 4800 7000 2    50   ~ 0
+AMS_FLT_LED
+Wire Wire Line
+	4950 7100 4800 7100
+Text Label 4800 7100 2    50   ~ 0
+GLV_RTN
+Text Label 1000 7450 2    50   ~ 0
+AMS_FLT
+Wire Wire Line
+	1100 7450 1000 7450
+Text Label 1400 6250 0    50   ~ 0
+GLV_24
+Wire Wire Line
+	1400 6400 1400 6250
+Wire Wire Line
+	1400 6800 1400 6700
+Connection ~ 1400 6800
+Wire Wire Line
+	1550 6800 1400 6800
+Wire Wire Line
+	1400 6950 1400 6800
+$Comp
+L Device:R R?
+U 1 1 5E72A72B
+P 1400 7100
+F 0 "R?" H 1470 7146 50  0000 L CNN
+F 1 "7.5K" H 1470 7055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1330 7100 50  0001 C CNN
+F 3 "~" H 1400 7100 50  0001 C CNN
+	1    1400 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E722263
+P 1400 6550
+F 0 "R?" H 1470 6596 50  0000 L CNN
+F 1 "2.4K" H 1470 6505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1330 6550 50  0001 C CNN
+F 3 "~" H 1400 6550 50  0001 C CNN
+	1    1400 6550
+	1    0    0    -1  
+$EndComp
+Text Label 2400 7100 0    50   ~ 0
+AMS_FLT_LED
+Wire Wire Line
+	2250 7100 2400 7100
+$Comp
+L Device:R R1
+U 1 1 5E6DEC6F
+P 2100 7100
+F 0 "R1" V 1893 7100 50  0000 C CNN
+F 1 "0" V 1984 7100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2030 7100 50  0001 C CNN
+F 3 "~" H 2100 7100 50  0001 C CNN
+	1    2100 7100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1850 7100 1950 7100
+Wire Wire Line
+	1850 7000 1850 7100
+Text Label 1850 6500 0    50   ~ 0
+GLV_24V
+Wire Wire Line
+	1850 6600 1850 6500
+$Comp
+L Transistor_FET:BSS84 Q1
+U 1 1 5E694329
+P 1750 6800
+F 0 "Q1" H 1956 6846 50  0000 L CNN
+F 1 "BSS84" H 1956 6755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1950 6725 50  0001 L CIN
+F 3 "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf" H 1750 6800 50  0001 L CNN
+	1    1750 6800
+	1    0    0    1   
+$EndComp
+$Comp
+L Lafayette_Electric_Car_Internals:BSS138W Q?
+U 1 1 5E76FF66
+P 1400 7450
+F 0 "Q?" H 1506 7496 50  0000 L CNN
+F 1 "BSS138W" H 1506 7405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70_Handsoldering" H 1100 7950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/BSS138W-1305267.pdf" H 1400 7450 50  0001 C CNN
+F 4 "BSS138WH6327XTSA1CT-ND" H 800 7850 50  0001 C CNN "Vendor Part"
+F 5 "Digikey" H 1400 7450 50  0001 C CNN "Vendor"
+F 6 "Infineon Technologies" H 1400 7450 50  0001 C CNN "Manufacturer"
+F 7 "BSS138WH6327XTSA1" H 1400 7450 50  0001 C CNN "Manufacturer Part"
+	1    1400 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 7650 1400 7800
+Text Label 1400 7800 0    50   ~ 0
+GLV_RTN
 $EndSCHEMATC
