@@ -1,0 +1,454 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Front Dash PCB"
+Date "2022-3-5"
+Rev "1.2"
+Comp "Lafayette Motorsports"
+Comment1 "Eli Crippen"
+Comment2 "https://github.com/Lafayette-FSAE/DriverDisplay"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Front-Dash-rescue:MountingHole_Pad-Mechanical H1
+U 1 1 5F9F10C2
+P 7600 1550
+F 0 "H1" H 7700 1596 50  0000 L CNN
+F 1 "MountingHole" H 7150 1750 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 7600 1550 50  0001 C CNN
+F 3 "~" H 7600 1550 50  0001 C CNN
+	1    7600 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Front-Dash-rescue:MountingHole_Pad-Mechanical H2
+U 1 1 5F9F1C33
+P 8050 1550
+F 0 "H2" H 8150 1596 50  0000 L CNN
+F 1 "MountingHole" H 7800 1750 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 8050 1550 50  0001 C CNN
+F 3 "~" H 8050 1550 50  0001 C CNN
+	1    8050 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Front-Dash-rescue:MountingHole_Pad-Mechanical H3
+U 1 1 5F9F24A8
+P 8450 1550
+F 0 "H3" H 8550 1596 50  0000 L CNN
+F 1 "MountingHole" H 8450 1750 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 8450 1550 50  0001 C CNN
+F 3 "~" H 8450 1550 50  0001 C CNN
+	1    8450 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 3950 1250 4400
+Wire Wire Line
+	1250 4400 750  4400
+Wire Wire Line
+	750  4400 750  5800
+Wire Wire Line
+	1750 3750 1250 3750
+Wire Wire Line
+	1250 3250 1550 3250
+Wire Wire Line
+	1550 3250 1550 3050
+Wire Wire Line
+	1250 3350 1650 3350
+Wire Wire Line
+	1250 3650 1950 3650
+Wire Wire Line
+	1250 3550 2150 3550
+$Comp
+L Front-Dash-rescue:PQQ6W-Q24-S5-S-Voltage_Regulator PS1
+U 1 1 5FD3D9FA
+P 2500 1850
+F 0 "PS1" H 2300 2600 50  0000 L CNN
+F 1 "24V-5V" H 2550 2600 50  0000 L CNN
+F 2 "Voltage Regulator:PQQ6W-Q24-S5-S" H 2500 1850 50  0001 C CNN
+F 3 "https://www.cui.com/product/resource/pqq6w-s.pdf" H 2500 1850 50  0001 C CNN
+F 4 "PQQ6W-Q24-S5-S" H 3200 2450 50  0000 C CNN "DPART"
+	1    2500 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Front-Dash-rescue:Conn_01x10_Female-Connector J1
+U 1 1 5FD40EAB
+P 1050 3550
+F 0 "J1" H 942 2825 50  0000 C CNN
+F 1 "Conn_01x10_Female" H 942 2916 50  0000 C CNN
+F 2 "Connector_Molex:Molex_SPOX_5267-10A_1x10_P2.50mm_Vertical" H 1050 3550 50  0001 C CNN
+F 3 "~" H 1050 3550 50  0001 C CNN
+	1    1050 3550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1250 3150 1450 3150
+Wire Wire Line
+	1450 3150 1450 2100
+Wire Wire Line
+	1250 3050 1350 3050
+$Comp
+L Front-Dash-rescue:Conn_01x02_Female-Connector J2
+U 1 1 5FD4CC2B
+P 3950 1650
+F 0 "J2" V 3796 1698 50  0000 L CNN
+F 1 "Conn_01x02_Female" V 3887 1698 50  0000 L CNN
+F 2 "Connector_Molex:Molex_SPOX_5267-02A_1x02_P2.50mm_Vertical" H 3950 1650 50  0001 C CNN
+F 3 "~" H 3950 1650 50  0001 C CNN
+	1    3950 1650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2350 1850
+NoConn ~ 2550 1850
+NoConn ~ 2850 1850
+Wire Wire Line
+	7600 1650 8050 1650
+Wire Wire Line
+	8050 1650 8450 1650
+Connection ~ 8050 1650
+$Comp
+L Front-Dash-rescue:EEE-FK1H101L-SamacSys_Parts C1
+U 1 1 5FD55B76
+P 1650 1600
+F 0 "C1" V 1604 1828 50  0000 L CNN
+F 1 "EEE-FK1H101L" V 1300 2000 50  0000 L CNN
+F 2 "CAPAE830X1050N" H 2000 1650 50  0001 L CNN
+F 3 "https://b2b-api.panasonic.eu/file_stream/pids/fileversion/19806" H 2000 1550 50  0001 L CNN
+F 4 "Aluminium Electrolytic Capacitors - SMD 50VDC, 100uF" H 2000 1450 50  0001 L CNN "Description"
+F 5 "10.5" H 2000 1350 50  0001 L CNN "Height"
+F 6 "667-EEE-FK1H101L" H 2000 1250 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Panasonic/EEE-FK1H101L?qs=vmHwEFxEFR%252BDShhHMCZ0bA%3D%3D" H 2000 1150 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Panasonic" H 2000 1050 50  0001 L CNN "Manufacturer_Name"
+F 9 "EEE-FK1H101L" H 2000 950 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1650 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1350 1600 1350 2700
+Wire Wire Line
+	1450 2100 1650 2100
+Wire Wire Line
+	1350 1600 1650 1600
+Connection ~ 1650 1600
+Wire Wire Line
+	1650 1600 2000 1600
+Wire Wire Line
+	2000 1600 2000 1950
+Wire Wire Line
+	2000 1950 2250 1950
+Wire Wire Line
+	2250 1950 2250 1850
+Wire Wire Line
+	1650 2100 2150 2100
+Wire Wire Line
+	2150 2100 2150 1850
+Connection ~ 1650 2100
+$Comp
+L Front-Dash-rescue:EEV226M050A9GAA-SamacSys_Parts C2
+U 1 1 5FDB3FA0
+P 3400 2100
+F 0 "C2" V 3696 1970 50  0000 R CNN
+F 1 "EEV226M050A9GAA" V 3605 1970 50  0000 R CNN
+F 2 "CAPAE660X565N" H 3750 2150 50  0001 L CNN
+F 3 "" H 3750 2050 50  0001 L CNN
+F 4 "Aluminum Electrolytic Capacitors - SMD 50V 22uF 20% 2 Ohms" H 3750 1950 50  0001 L CNN "Description"
+F 5 "5.65" H 3750 1850 50  0001 L CNN "Height"
+F 6 "80-EEV226M050A9GAA" H 3750 1750 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/KEMET/EEV226M050A9GAA?qs=E9QF1UCAUX6uZcSslp%252BlwA%3D%3D" H 3750 1650 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 3750 1550 50  0001 L CNN "Manufacturer_Name"
+F 9 "EEV226M050A9GAA" H 3750 1450 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3400 2100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2750 1850 2750 1950
+Wire Wire Line
+	2750 1950 3150 1950
+Wire Wire Line
+	3150 1950 3150 1600
+Wire Wire Line
+	3150 1600 3400 1600
+Wire Wire Line
+	3400 1600 3600 1600
+Wire Wire Line
+	3600 1600 3600 1650
+Wire Wire Line
+	3600 1650 3750 1650
+Connection ~ 3400 1600
+Wire Wire Line
+	2650 1850 2650 2100
+Wire Wire Line
+	2650 2100 3400 2100
+Wire Wire Line
+	3400 2100 3750 2100
+Wire Wire Line
+	3750 2100 3750 1750
+Connection ~ 3400 2100
+$Comp
+L Front-Dash-rescue:AL5809-20P1-7 U1
+U 1 1 622EE380
+P 1550 4400
+F 0 "U1" V 1597 4478 60  0000 L CNN
+F 1 "AL5809-20P1-7" V 1703 4478 60  0000 L CNN
+F 2 "Front_Dash:AL5809-60P1-7" H 1750 4040 60  0001 C CNN
+F 3 "" H 1750 4360 60  0000 C CNN
+	1    1550 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Front-Dash-rescue:AL5809-20P1-7 U2
+U 1 1 622EEDB3
+P 3200 4400
+F 0 "U2" V 3247 4478 60  0000 L CNN
+F 1 "AL5809-20P1-7" V 3353 4478 60  0000 L CNN
+F 2 "Front_Dash:AL5809-60P1-7" H 3400 4040 60  0001 C CNN
+F 3 "" H 3400 4360 60  0000 C CNN
+	1    3200 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Front-Dash-rescue:AL5809-20P1-7 U5
+U 1 1 622F6EBD
+P 3550 3050
+F 0 "U5" H 3650 2813 60  0000 C CNN
+F 1 "AL5809-20P1-7" H 3650 2919 60  0000 C CNN
+F 2 "Front_Dash:AL5809-60P1-7" H 3750 2690 60  0001 C CNN
+F 3 "" H 3750 3010 60  0000 C CNN
+	1    3550 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Front-Dash-rescue:AL5809-20P1-7 U6
+U 1 1 622F4945
+P 2700 3400
+F 0 "U6" H 2800 3637 60  0000 C CNN
+F 1 "AL5809-20P1-7" H 2800 3531 60  0000 C CNN
+F 2 "Front_Dash:AL5809-60P1-7" H 2900 3040 60  0001 C CNN
+F 3 "" H 2900 3360 60  0000 C CNN
+	1    2700 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3400 1650 3400
+Wire Wire Line
+	1650 3400 1650 3350
+Wire Wire Line
+	3900 2700 1350 2700
+Connection ~ 1350 2700
+Wire Wire Line
+	3250 3050 1550 3050
+Wire Wire Line
+	1350 2700 1350 3050
+$Comp
+L Front-Dash-rescue:AL5809-20P1-7 U3
+U 1 1 622EF443
+P 4950 4350
+F 0 "U3" V 4997 4428 60  0000 L CNN
+F 1 "AL5809-20P1-7" V 5103 4428 60  0000 L CNN
+F 2 "Front_Dash:AL5809-60P1-7" H 5150 3990 60  0001 C CNN
+F 3 "" H 5150 4310 60  0000 C CNN
+	1    4950 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Front-Dash-rescue:LED-GRN-C503B-GCN-CY0C0792 D7
+U 1 1 6232CDB7
+P 5600 2700
+F 0 "D7" H 5600 2980 50  0000 C CNN
+F 1 "LED-GRN-C503B-GCN-CY0C0792" H 5600 2889 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 5550 2650 50  0001 C CNN
+F 3 "" H 5550 2650 50  0001 C CNN
+	1    5600 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Front-Dash-rescue:LED-GRN-C503B-GCN-CY0C0792 D1
+U 1 1 62330A6F
+P 1550 5150
+F 0 "D1" V 1504 5292 50  0000 L CNN
+F 1 "LED-GRN-C503B-GCN-CY0C0792" V 1595 5292 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm" H 1500 5100 50  0001 C CNN
+F 3 "" H 1500 5100 50  0001 C CNN
+	1    1550 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Front-Dash-rescue:LED-GRN-C503B-GCN-CY0C0792 D2
+U 1 1 62331E90
+P 3200 5200
+F 0 "D2" V 3154 5342 50  0000 L CNN
+F 1 "LED-GRN-C503B-GCN-CY0C0792" V 3245 5342 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm" H 3150 5150 50  0001 C CNN
+F 3 "" H 3150 5150 50  0001 C CNN
+	1    3200 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L Front-Dash-rescue:LED-AMB-C503B-AAS-CZ0B0342 D4
+U 1 1 62335244
+P 6850 5200
+F 0 "D4" V 6804 5343 50  0000 L CNN
+F 1 "LED-AMB-C503B-AAS-CZ0B0342" V 6895 5343 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm" H 6800 5150 50  0001 C CNN
+F 3 "" H 6800 5150 50  0001 C CNN
+	1    6850 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L Front-Dash-rescue:LED-RED-C503C-RCS-CYAZaAA2 D3
+U 1 1 623371F4
+P 4950 5200
+F 0 "D3" V 4904 5343 50  0000 L CNN
+F 1 "LED-RED-C503C-RCS-CYAZaAA2" V 4995 5343 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm" H 4900 5150 50  0001 C CNN
+F 3 "" H 4900 5150 50  0001 C CNN
+	1    4950 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L Front-Dash-rescue:LED-RED-C503C-RCS-CYAZaAA2 D5
+U 1 1 62339824
+P 4800 3050
+F 0 "D5" H 4750 3300 50  0000 L CNN
+F 1 "LED-RED-C503C-RCS-CYAZaAA2" H 4150 3200 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm" H 4750 3000 50  0001 C CNN
+F 3 "" H 4750 3000 50  0001 C CNN
+	1    4800 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Front-Dash-rescue:LED-RED-C503C-RCS-CYAZaAA2 D6
+U 1 1 6233CE8E
+P 4000 3400
+F 0 "D6" H 3950 3650 50  0000 L CNN
+F 1 "LED-RED-C503C-RCS-CYAZaAA2" H 3350 3550 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm" H 3950 3350 50  0001 C CNN
+F 3 "" H 3950 3350 50  0001 C CNN
+	1    4000 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 3850 1550 4300
+Wire Wire Line
+	1250 3850 1550 3850
+Wire Wire Line
+	1750 3750 1750 4150
+Wire Wire Line
+	1750 4150 3200 4150
+Wire Wire Line
+	3200 4150 3200 4300
+Wire Wire Line
+	1950 3650 1950 3950
+Wire Wire Line
+	1950 3950 4950 3950
+Wire Wire Line
+	4950 3950 4950 4250
+Wire Wire Line
+	2150 3550 2150 3800
+Wire Wire Line
+	6850 3800 6850 4200
+Wire Wire Line
+	2150 3800 6850 3800
+Wire Wire Line
+	3650 3050 4650 3050
+Wire Wire Line
+	4300 2700 5450 2700
+Wire Wire Line
+	750  5800 1550 5800
+Wire Wire Line
+	9000 5800 9000 3400
+Wire Wire Line
+	9000 3400 8050 3400
+Wire Wire Line
+	4950 3050 5350 3050
+Wire Wire Line
+	5350 3050 5350 3400
+Connection ~ 5350 3400
+Wire Wire Line
+	5350 3400 4150 3400
+Wire Wire Line
+	5750 2700 6100 2700
+Wire Wire Line
+	6100 2700 6100 3400
+Connection ~ 6100 3400
+Wire Wire Line
+	6100 3400 5350 3400
+Wire Wire Line
+	1550 5300 1550 5800
+Connection ~ 1550 5800
+Wire Wire Line
+	1550 5800 3200 5800
+Wire Wire Line
+	3200 5350 3200 5800
+Connection ~ 3200 5800
+Wire Wire Line
+	3200 5800 4950 5800
+Wire Wire Line
+	4950 5350 4950 5800
+Connection ~ 4950 5800
+Wire Wire Line
+	4950 5800 6850 5800
+Wire Wire Line
+	6850 5350 6850 5800
+Connection ~ 6850 5800
+Wire Wire Line
+	6850 5800 9000 5800
+Wire Wire Line
+	6850 4600 6850 5050
+Wire Wire Line
+	4950 4650 4950 5050
+Wire Wire Line
+	3200 4700 3200 5050
+Wire Wire Line
+	1550 4700 1550 5000
+Wire Wire Line
+	3000 3400 3850 3400
+Wire Wire Line
+	8050 1650 8050 3400
+Connection ~ 8050 3400
+Wire Wire Line
+	8050 3400 6100 3400
+NoConn ~ 1250 3450
+Text Notes 1700 4900 0    50   ~ 0
+AIRS
+Text Notes 3350 4900 0    50   ~ 0
+Sfty Loop
+Text Notes 5100 4900 0    50   ~ 0
+Fault
+Text Notes 7050 4850 0    50   ~ 0
+High Voltage\n
+Text Notes 6200 2700 0    50   ~ 0
+GLV
+Text Notes 5450 3050 0    50   ~ 0
+AMS
+Text Notes 4150 3550 0    50   ~ 0
+IMD
+$Comp
+L Front-Dash-rescue:AL5809-20P1-7 U4
+U 1 1 622F94A9
+P 6850 4300
+F 0 "U4" V 6897 4378 60  0000 L CNN
+F 1 "AL5809-20P1-7" V 7003 4378 60  0000 L CNN
+F 2 "Front_Dash:AL5809-60P1-7" H 7050 3940 60  0001 C CNN
+F 3 "" H 7050 4260 60  0000 C CNN
+	1    6850 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Front-Dash-rescue:AL5809-20P1-7 U7
+U 1 1 622F213B
+P 4200 2700
+F 0 "U7" H 4298 2463 60  0000 C CNN
+F 1 "AL5809-20P1-7" H 4298 2569 60  0000 C CNN
+F 2 "Front_Dash:AL5809-60P1-7" H 4400 2340 60  0001 C CNN
+F 3 "" H 4400 2660 60  0000 C CNN
+	1    4200 2700
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

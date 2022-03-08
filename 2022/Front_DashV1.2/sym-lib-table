@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Front-Dash-rescue)(type Legacy)(uri "${KIPRJMOD}/Front Dash-rescue.lib")(options "")(descr ""))
+)
